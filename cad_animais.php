@@ -1,3 +1,9 @@
+<html>
+
+<h1>ATUALIZAR DADOS</h1>
+
+</html>
+
 <?php
 
 if (isset($_POST['BTEnvia'])) {
