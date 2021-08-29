@@ -8,13 +8,15 @@ if (isset($_POST['BTEnvia'])) {
  $nome = $_POST['Nome do Animal'];
  $raca = $_POST['Raça']; 
  $sexo= $_POST['Sexo'];
+ $date= $_POST['Data de Vacinação'];
  //====================================================
  $email_conteudo = "Código = $codigo \n";
  $email_conteudo .= "Nome do Animal = $nome \n";
  $email_conteudo .= "Raça = $raca \n"; 
- $email_conteudo .= "Sexo = $sexo \n"; 
+ $email_conteudo .= "Sexo = $sexo \n";
+ $email_conteudo .= "Data de Vacinação = $dt_vac \n";  
  //==================================================== 
- if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)){ 
+ if (mail ($email_destinatario, nl2br($email_conteudo), $email_headers)){ 
  echo "</b> enviado com sucesso!</b>"; 
  } 
  else{ 
@@ -39,6 +41,9 @@ if (isset($_POST['BTEnvia'])) {
  <p> 
  Sexo:<br /> 
  <input type="text" size="35" name="Sexo"> 
+ </p>   
+ Data de vacinação:<br /> 
+ <input type="date" size="35" name="dt_vac"> 
  </p>   
  <p>
           <input type="submit" name="BTEnvia" value="Enviar"> 
