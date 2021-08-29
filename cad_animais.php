@@ -1,6 +1,6 @@
 <html>
 
-<h1>ATUALIZAR DADOS</h1>
+<h1>CADASTRAR ANIMAL</h1>
 
 </html>
 
